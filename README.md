@@ -1,33 +1,20 @@
-# mundo-maos-dadas-index.html
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Brunno Rammos — Portal de Projetos</title>
-<meta name="description" content="Portal de projetos de Brunno Rammos: política, cultura, esporte, energia, economia, direito, saúde e solidariedade — ideias que atravessam fronteiras.">
-<meta name="theme-color" content="#040408">
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="icon" href="icons/favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Mãos Dadas">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --void:#040408;
-    --ink:#EAF2FA;
-    --muted:#8A98AB;
-    --line:rgba(255,255,255,.10);
-    --card:rgba(255,255,255,.035);
-
-    --globe-pale:#EAF6FF;
-    --globe-blue:#4FA3E3;
-    --globe-deep:#1A4E83;
+portal-app/
+├── www/                         → o PWA (isto é o que você hospeda online)
+│   ├── index.html               → o portal (já preparado como PWA)
+│   ├── manifest.webmanifest     → identidade do app (nome, cores, ícones)
+│   ├── service-worker.js        → cache + offline
+│   ├── offline.html             → tela exibida sem conexão
+│   ├── icons/                   → ícones 192, 512, maskable, favicon
+│   └── .well-known/
+│       └── assetlinks.json      → verifica que o app pertence ao seu domínio
+├── android/
+│   └── twa-manifest.json        → configuração do Bubblewrap (gera o AAB)
+├── store/
+│   ├── ficha-google-play.md     → títulos e descrições prontos
+│   ├── politica-de-privacidade.html → hospede e use a URL na loja (obrigatório)
+│   ├── feature-graphic-1024x500.png → gráfico de destaque
+│   └── play-icon-512.png        → ícone da loja
+└── README.md
     --corona-core:#FFE8AA;
     --corona-warm:#FFB347;
 
